@@ -1,0 +1,7 @@
+:root {
+    --color-1: #f5f5f5;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/example.ttf');
+}
