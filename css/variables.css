@@ -1,5 +1,8 @@
 :root {
     --color-1: #f5f5f5;
+    --lorem-item: #f3f4f4;
+    --lorem-container: #dadce0;
+    --lorem-item-box: #ccdbfe;
 }
 @font-face {
     font-family: 'Roboto';
