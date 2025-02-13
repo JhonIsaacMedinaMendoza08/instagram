@@ -71,6 +71,7 @@ header{
 /************* nav *****************/
 .nav__storyTray {
     background: var(--lorem-container);
+    border-bottom: 2px solid var(--color-4);
     width: 100%;
     height: 105.75px;
     display: flex;
@@ -258,7 +259,7 @@ header{
 .div__post img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     /* position: relative; lorem */
     background: var(--lorem-item);
 }
@@ -324,13 +325,49 @@ header{
 } 
 .div__postInfo form{
     padding-top: 10px;
+    height: 38px;
     background: var(--lorem-item);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: "sf-ui-display-light";
+    font-size: 14px;
+    color: var(--color-3);
+
+}
+.div__postInfo img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    /* border-radius: 100%; */
+
 }
 .div__postInfo form textarea{
     resize: none;
-    height: 38px;
     width: 100%;
+    height: 24px;
+    padding: 3.5px;
+    border: none;
+    font-family: "sf-ui-display-light";
+    font-size: 14px;
+    color: var(--color-3);
 }
+.div__timePost span{
+    font-family: "sf-ui-display-light";
+    font-size: 14px;
+    color: var(--color-3);
+}
+.commentImage {
+    border-radius: 100%;
+}
+.div__postInfo form div{
+    display: flex;
+    gap: 14px;
+    object-fit: cover;
+}
+
+
 .div__postInfo-icons {
     width: 100%;
     height: 44px;
@@ -371,9 +408,11 @@ header{
 
 /************* Footer *****************/
 .footer__navigationBar{
+    border-top: 2px solid var(--color-4);
+
     width: 100%;
     height: 56px;
-    background: var(--lorem-container);
+    background: var(--color-2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -387,23 +426,19 @@ header{
 .footer__navigationBar a:last-child img{
     border-radius: 100%;
 } 
+.footer__navigationBar a:last-child {
+    position: relative;
+}
+.footer__navigationBar a:last-child::after{
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: var(--color-5);
+} 
 .footer__navigationBar a img{
     width: 24px;
     height: 24px;
-    position: relative; /* lorem */
 }
-
-/* **************** lorem **************/
-/* .footer__navigationBar a img::after{
-    content: "24 x 24";
-    font-family: sans-serif;
-    background: var(--lorem-item);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-/* ************************************* */
